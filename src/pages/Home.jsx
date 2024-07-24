@@ -1,6 +1,6 @@
 import classNames from 'classnames'
 import React from 'react'
-import { ArticleList } from '../components'
+import { ArticleList, PopularTags } from '../components'
 import { useArticlesQuery, useAuth } from '../hooks'
 
 const initialFilters = { tag: '', offset: null, feed: false }
@@ -31,7 +31,7 @@ function Home() {
     <div className="home-page">
       <div className="banner">
         <div className="container">
-          <h1 className="logo-font">InkSphere</h1>
+          <h1 className="logo-font">Blogging</h1>
           <p>A place to share your knowledge.</p>
         </div>
       </div>
@@ -58,6 +58,9 @@ function Home() {
               </ul>
             </div>
             <ArticleList  />
+          </div>
+          <div className='col-md-3'>
+            <PopularTags />
           </div>
           
         </div>

@@ -10,7 +10,7 @@ function Navbar() {
     <nav className="navbar navbar-light">
       <div className="container">
         <NavLink activeClassName="active" className="navbar-brand" to="/" end>
-        InkSphere
+          InkSphere
         </NavLink>
         <ul className="nav navbar-nav pull-xs-right">
           <li className="nav-item">
@@ -90,5 +90,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
